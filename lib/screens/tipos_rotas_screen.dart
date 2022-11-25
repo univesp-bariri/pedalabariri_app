@@ -30,21 +30,38 @@ class TiposRotasScreen extends StatelessWidget {
       body: InkWell(
           child: ListView(
             children: <Widget>[
-              Container(
-                height: 300,
-                width: double.maxFinite,
-                margin: EdgeInsets.zero,
-                child: Stack (
+              Column(
                 children: [
-                  ListView.builder(
-                    itemCount: rotasDetalhes.length,
-                    itemBuilder: (ctx, index) {
-                      return RotasDetalhesItem(rotasDetalhes[index]);
-                      }
-                    ),
-                  ],
-                ),
-              ),
+                  Container(
+                          height: 300,
+                          width: double.maxFinite,
+                          margin: EdgeInsets.zero,
+                          child: Stack (
+                          children: [
+                            ListView.builder(
+                              itemCount: rotasDetalhes.length,
+                              itemBuilder: (ctx, index) {
+                                return RotasDetalhesItem(rotasDetalhes[index]);
+                                }
+                            ),
+                            Container(
+                              alignment: Alignment.bottomRight,
+                              margin: const EdgeInsets.all(20),
+                              child: FloatingActionButton.small(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Icon(
+                                    Icons.star,
+                                    size: 30),
+                              ),
+                            ),
+                            ],
+                            ),
+                          ),
+                        ],
+                      ),
+
               Container(
                 padding: const EdgeInsets.all(5),
                 margin: const EdgeInsets.symmetric(vertical: 10),

@@ -26,7 +26,7 @@ class RotaItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       elevation: 4,
-      margin: const EdgeInsets.only(left: 15, top:10,right:15, bottom: 10),
+      margin: const EdgeInsets.only(left: 15, top:15,right:15, bottom: 10),
       //borderRadius: BorderRadius.circular(15),
          child: Column (
             children: <Widget> [
@@ -39,7 +39,7 @@ class RotaItem extends StatelessWidget {
                   ),
                     child: Image(
                       image: AssetImage(rota.image),
-                      height: 190,
+                      height: 200,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),

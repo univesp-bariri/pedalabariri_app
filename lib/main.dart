@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:pedala_bariri/screens/contato_screen.dart';
 import 'package:pedala_bariri/screens/tipos_rotas_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:pedala_bariri/screens/home_screen.dart';
 import 'mycolors/mycolors.dart';
-import 'screens/auth_screen.dart';
 import 'screens/auth_home_screen.dart';
 import 'providers/auth.dart';
-import 'screens/tabs_screen.dart';
 import 'utils/app_routes.dart';
-import 'screens/rotas_screen.dart';
-import 'screens/tipos_rotas_screen.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(const MyApp());
 }
 

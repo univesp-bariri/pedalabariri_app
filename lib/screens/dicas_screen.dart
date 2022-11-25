@@ -172,9 +172,9 @@ class DicasScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(height: 16),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-
                   children: <Widget> [
                     Container (
                        alignment: Alignment.bottomCenter,
@@ -184,17 +184,17 @@ class DicasScreen extends StatelessWidget {
                           Container(
                             margin: const EdgeInsets.only(top: 5),
                             padding: const EdgeInsets.all(2),
-                            child: const Icon(Icons.pedal_bike, color: primaryBlack, size: 18,)
+                            child: const Icon(Icons.pedal_bike, color: primaryBlack, size: 22,)
                           ),
                           Container(
                             margin: const EdgeInsets.only(top: 5),
                            // padding: const EdgeInsets.all(1),
-                            child: const Text('PEDALA', style: TextStyle(fontWeight: FontWeight.w400, color: primaryBlack, fontSize: 14, fontFamily: 'Helvetica')),
+                            child: const Text('PEDALA', style: TextStyle(fontWeight: FontWeight.w400, color: primaryBlack, fontSize: 18, fontFamily: 'Helvetica')),
                           ),
                           Container(
                             margin: const EdgeInsets.only(top: 5),
                             //padding: const EdgeInsets.all(1),
-                            child: const Text('BARIRI', style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 1, color: primaryBlack, fontSize: 14, fontFamily: 'Helvetica')),
+                            child: const Text('BARIRI', style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 1, color: primaryBlack, fontSize: 18, fontFamily: 'Helvetica')),
                           ),
                         ],
                       ),

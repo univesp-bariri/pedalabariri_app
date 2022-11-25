@@ -13,9 +13,9 @@ class RotasScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GridView(
-      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 400,
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           childAspectRatio: 3/2,
+          crossAxisCount: 1,
       ),
       children: DUMMY_ROTAS.map((rot){
         return RotaItem(rota: rot);

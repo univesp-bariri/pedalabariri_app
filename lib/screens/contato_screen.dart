@@ -36,20 +36,37 @@ class ContatoScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 40),
                   Row (
                     children: <Widget> [
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        margin: EdgeInsets.zero,
-                        child: Container (
-                          padding: const EdgeInsets.all(10),
-                          margin: const EdgeInsets.only(top: 10),
-                          child: Text(
-                            "SOBRE NÓS".toUpperCase(),
-                            style: const TextStyle(
+                         Flexible(
+                            child: Container(
+                              margin: const EdgeInsets.only(left:22,right: 22),
+                              child: const Text(
+                            "Para sugestões, dúvidas ou parceria, sinta-se livre para entrar em contato conosco:",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                               textAlign: TextAlign.center,
+                              ),
+                            ),
+                        ),
+                    ],
+                  ),
+                  Row (
+                    children: <Widget> [
+                      Flexible(
+                        child: Container(
+                          width: MediaQuery.of(context).size.width,
+                          alignment: Alignment.center,
+                          height: 60,
+                          child: const Text(
+                            "pedala.bariri@gmail.com",
+                            style: TextStyle(
                               fontSize: 18,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: 'Raleway',
+                              fontWeight: FontWeight.w900,
+                              color: primaryBlack
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -57,20 +74,41 @@ class ContatoScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height:15),
                   Row (
                     children: <Widget> [
                       Container(
                         width: MediaQuery.of(context).size.width,
                         color: const Color.fromRGBO(0, 146, 122, 1),
                         margin: const EdgeInsets.only(top: 5),
+                        height: 300,
+                        padding: const EdgeInsets.only(top: 10),
                         child: Container (
-                          height: 250,
+                          height: MediaQuery.of(context).size.height,
                           alignment: Alignment.topCenter,
                           width: double.infinity,
-                          padding: const EdgeInsets.all(30),
-                          margin: const EdgeInsets.only(top:10,left: 20, right: 20),
+                          padding: const EdgeInsets.only(top: 20, left: 5,right: 5),
+                          margin: const EdgeInsets.only(top:6,left: 10, right: 5),
                           child: Column (
                             children: <Widget> [
+                              Row (
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: const <Widget> [
+                                  Flexible(
+                                    child: Text(
+                                    "SOBRE NÓS",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 25),
                               Row (
                                 children: const <Widget> [
                                   Flexible(child: Text(
@@ -100,48 +138,35 @@ class ContatoScreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 10),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget> [
+                                  Container (
+                                    alignment: Alignment.bottomCenter,
+                                    height: 50,
+                                    child: Row (
+                                      children: [
+                                        Container(
+                                            margin: const EdgeInsets.only(top: 5),
+                                            padding: const EdgeInsets.all(2),
+                                            child: const Icon(Icons.pedal_bike, color: Colors.white, size: 20,)
+                                        ),
+                                        Container(
+                                          margin: const EdgeInsets.only(top: 5),
+                                          // padding: const EdgeInsets.all(1),
+                                          child: const Text('PEDALA', style: TextStyle(fontWeight: FontWeight.w400, color: Colors.white, fontSize: 16, fontFamily: 'Helvetica')),
+                                        ),
+                                        Container(
+                                          margin: const EdgeInsets.only(top: 5),
+                                          //padding: const EdgeInsets.all(1),
+                                          child: const Text('BARIRI', style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 1, color: Colors.white, fontSize: 16, fontFamily: 'Helvetica')),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              )
                             ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 20),
-                  Row (
-                    children: <Widget> [
-                         Flexible(
-                            child: Container(
-                              margin: const EdgeInsets.only(left:22,right: 22),
-                              child: const Text(
-                            "Para sugestões, dúvidas ou parceria, sinta-se livre para entrar em contato conosco:",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 15),
-                  Row (
-                    children: <Widget> [
-                      Flexible(
-                        child: Container(
-                          width: MediaQuery.of(context).size.width,
-                          color: const Color.fromRGBO(0, 146, 122, 1),
-                          alignment: Alignment.center,
-                          height: 60,
-                          child: const Text(
-                            "pedala.bariri@gmail.com",
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
-                            ),
-                            textAlign: TextAlign.center,
                           ),
                         ),
                       ),
