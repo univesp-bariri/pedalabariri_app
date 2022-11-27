@@ -118,7 +118,7 @@ class _MainScreenState extends State<MainScreen> {
             alignment: Alignment.center,
             padding: EdgeInsets.all(20),
             child: const Text(
-              "Programa-se para aproveitar ao máximo seu passeio e explorar toda experiência que o cicloturismo baririense tem a orefecer.",
+              "Programe-se para aproveitar ao máximo seu passeio e explorar toda experiência que o cicloturismo baririense tem a oferecer.",
               style: TextStyle(
                 fontSize: 22,
                 color: const Color.fromRGBO(50, 120, 255, 1),
