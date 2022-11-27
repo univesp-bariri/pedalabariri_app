@@ -15,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   Weather weather = Weather();
 
   String currentWeather = "";
-  double tempC = 0;
+  int tempC = 0;
   double tempF = 0;
   String iconImg = "img/weather/64x64/day/113.png";
 
@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
 
     setState(() {
       currentWeather = weather.condition;
-      tempC = weather.temperatureC;
+      tempC = weather.temperatureC.toInt();
       iconImg = weather.icon.replaceAll('//cdn.weatherapi.com', 'img');
     });
     print(weather.temperatureC);
