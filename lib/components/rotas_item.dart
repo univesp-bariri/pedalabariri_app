@@ -67,10 +67,11 @@ class RotaItem extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 16),
               Flexible(
                   //padding: const EdgeInsets.all(20),
-                  child: Row(
+                  child: Container (
+                    alignment: Alignment.center,
+                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                       Row(
@@ -104,6 +105,7 @@ class RotaItem extends StatelessWidget {
                         ],
                       ),
                     ],
+                  ),
                   ),
                 )
             ],

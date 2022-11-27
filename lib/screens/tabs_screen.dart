@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../mycolors/mycolors.dart';
-import 'favoritos_screen.dart';
+import 'clima_screen.dart';
 import 'rotas_screen.dart';
 import 'home_screen.dart';
 import 'dicas_screen.dart';
@@ -19,7 +19,7 @@ class TabsScreen extends StatefulWidget {
     {'title': 'PEDALA BARIRI', 'screen': const HomeScreen()},
     {'title': 'ROTAS', 'screen': const RotasScreen()},
     {'title': 'DICAS', 'screen': const DicasScreen()},
-    {'title': 'ROTAS FAVORITAS', 'screen': const FavoritosScreen()},
+    {'title': 'CLIMA', 'screen': const MainScreen()},
     {'title': 'CONTATO', 'screen': const ContatoScreen()},
   ];
 
@@ -71,8 +71,8 @@ class TabsScreen extends StatefulWidget {
           ),
           BottomNavigationBarItem(
             backgroundColor: primaryBlack,
-            icon: Icon(Icons.star),
-            label: 'FAVORITOS',
+            icon: Icon(Icons.sunny),
+            label: 'CLIMA',
           ),
         ],
       ),

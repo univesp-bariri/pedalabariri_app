@@ -33,10 +33,12 @@ dependencies:
     sdk: flutter
   provider: ^6.0.4
   http: ^0.13.5
+  html: ^0.15.0
   shared_preferences: ^2.0.15
   url_launcher: ^6.1.7
   flutter_launcher_icons: ^0.11.0
   flutter_native_splash: ^2.2.15
+  webview_flutter: ^3.0.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -105,6 +107,9 @@ flutter:
      - img/rural/capela.jpg
      - img/rural/lago.jpg
      - img/rural/tiete.jpg
+     - img/weather/64x64/day/
+     - img/weather/64x64/night/
+     - img/weather/day.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -112,7 +112,7 @@ class ContatoScreen extends StatelessWidget {
                               Row (
                                 children: const <Widget> [
                                   Flexible(child: Text(
-                                    "Pedala Bariri é um aplicativo web idealizado pelos alunos do Eixo de Computação da UNIVESP, para a disciplina Projeto Integrador.",
+                                    "Pedala Bariri é um aplicativo idealizado pelos alunos do Eixo de Computação da UNIVESP, para a disciplina Projeto Integrador.",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600,

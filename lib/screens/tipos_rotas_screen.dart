@@ -44,7 +44,7 @@ class TiposRotasScreen extends StatelessWidget {
                                 return RotasDetalhesItem(rotasDetalhes[index]);
                                 }
                             ),
-                            Container(
+                            /*Container(
                               alignment: Alignment.bottomRight,
                               margin: const EdgeInsets.all(20),
                               child: FloatingActionButton.small(
@@ -55,7 +55,7 @@ class TiposRotasScreen extends StatelessWidget {
                                     Icons.star,
                                     size: 30),
                               ),
-                            ),
+                            ),*/
                             ],
                             ),
                           ),
